@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OzoConfig>
+  <DeviceIDs>
+    <DeviceID>60ED9EB1-632D-45F6-B861-F0AF56B71780</DeviceID>
+    <DeviceID>60ED9EB1-632D-45F6-B861-F0AF56B71781</DeviceID>
+    <DeviceID>60ED9EB1-632D-45F6-B861-F0AF56B71782</DeviceID>
+    <DeviceID>60ED9EB1-632D-45F6-B861-F0AF56B71783</DeviceID>
+    <DeviceID>60ED9EB1-632D-45F6-B861-F0AF56B71784</DeviceID>
+    <DeviceID>60ED9EB1-632D-45F6-B861-F0AF56B71785</DeviceID>
+  </DeviceIDs>
+  <NumMics>3</NumMics>
+  <Functions>
+    <Function>front</Function>
+    <Function>rear</Function>
+    <Function>surround</Function>
+  </Functions>
+  <AudioFormat>1</AudioFormat>
+</OzoConfig>
