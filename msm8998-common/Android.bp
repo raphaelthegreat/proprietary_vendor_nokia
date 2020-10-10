@@ -38,24 +38,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsdm-disp-apis",
-	owner: "nokia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libsdm-disp-apis.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libsdm-disp-apis.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libaudio_log_utils",
 	owner: "nokia",
 	strip: {
@@ -161,23 +143,14 @@ android_app_import {
 }
 
 android_app_import {
-	name: "aptxalsOverlay",
+	name: "CNEService",
 	owner: "nokia",
-	apk: "proprietary/product/overlay/aptxalsOverlay.apk",
+	apk: "proprietary/priv-app/CNEService/CNEService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-}
-
-android_app_import {
-	name: "PowerOffAlarm",
-	owner: "nokia",
-	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
+	privileged: true,
 }
 
 android_app_import {
@@ -244,6 +217,17 @@ android_app_import {
 		enabled: false,
 	},
 	soc_specific: true,
+}
+
+android_app_import {
+	name: "PowerOffAlarm",
+	owner: "nokia",
+	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
 }
 
 android_app_import {
@@ -320,3 +304,4 @@ dex_import {
 	owner: "nokia",
 	jars: ["proprietary/framework/WfdCommon.jar"],
 }
+
