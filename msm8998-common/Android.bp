@@ -143,17 +143,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CNEService",
-	owner: "nokia",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "WfdService",
 	owner: "nokia",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
