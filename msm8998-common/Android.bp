@@ -154,17 +154,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CACertService",
-	owner: "nokia",
-	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "CneApp",
 	owner: "nokia",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -190,17 +179,6 @@ android_app_import {
 	name: "TimeService",
 	owner: "nokia",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "TrustZoneAccessService",
-	owner: "nokia",
-	apk: "proprietary/vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
