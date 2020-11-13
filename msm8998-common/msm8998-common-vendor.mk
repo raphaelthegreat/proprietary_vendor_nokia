@@ -875,7 +875,6 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libthermalclient \
     vendor.qti.hardware.fm@1.0 \
-    aptxals \
     WfdService \
     CneApp \
     IWlanService \

@@ -136,16 +136,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "aptxals",
-	owner: "nokia",
-	apk: "proprietary/app/aptxals/aptxals.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "WfdService",
 	owner: "nokia",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
