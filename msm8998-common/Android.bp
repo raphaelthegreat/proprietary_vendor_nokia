@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019-2020 Paranoid Android
+ * Copyright (C) 2019-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -266,17 +266,19 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.gnss@2.0-service-qti.xml",
+	name: "android.hardware.gnss@2.0-service-qti",
 	owner: "nokia",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml",
+	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.gnss@3.0-service.xml",
+	name: "vendor.qti.gnss@3.0-service",
 	owner: "nokia",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml",
+	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
