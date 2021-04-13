@@ -196,15 +196,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/acdbdata/A1N/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/A1N/Bluetooth_cal.acdb \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/acdbdata/A1N/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/A1N/General_cal.acdb \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/acdbdata/A1N/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/A1N/Global_cal.acdb \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/acdbdata/A1N/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/A1N/Handset_cal.acdb \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/acdbdata/A1N/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/A1N/Hdmi_cal.acdb \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/acdbdata/A1N/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/A1N/Headset_cal.acdb \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/acdbdata/A1N/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/A1N/Speaker_cal.acdb \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/acdbdata/A1N/workspaceFile_cal.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/A1N/workspaceFile_cal.qwsp \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \

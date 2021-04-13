@@ -63,6 +63,23 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/NB1/proprietary/vendor/bin/qdcm_calib_data_JDI_Dual_nt36850_cmd_mode_dsi_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/bin/qdcm_calib_data_JDI_Dual_nt36850_cmd_mode_dsi_panel_without_DSC.xml \
     vendor/nokia/NB1/proprietary/vendor/bin/qdcm_calib_data_LGD_Dual_DSI_cmd_mode_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/bin/qdcm_calib_data_LGD_Dual_DSI_cmd_mode_panel_without_DSC.xml \
     vendor/nokia/NB1/proprietary/vendor/bin/qfp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qfp-daemon \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Bluetooth_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/General_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Global_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Handset_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Hdmi_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Headset_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Speaker_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/workspaceFile.qwsp \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Bluetooth_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/General_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Global_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Handset_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Hdmi_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Headset_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Speaker_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/workspaceFile.qwsp \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/nokia/NB1/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
     vendor/nokia/NB1/proprietary/vendor/etc/camera/csidtg_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/csidtg_camera.xml \
     vendor/nokia/NB1/proprietary/vendor/etc/camera/csidtg_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/csidtg_chromatix.xml \
