@@ -19,91 +19,9 @@
 soong_namespace {
 }
 
-android_app_import {
-	name: "IFAAService",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/IFAAService/IFAAService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-dex_import {
-	name: "vendor.oneplus.camera.CameraHIDL-V1.0-java",
-	owner: "oneplus",
-	jars: ["proprietary/framework/vendor.oneplus.camera.CameraHIDL-V1.0-java.jar"],
-}
-
-dex_import {
-	name: "vendor.oneplus.hardware.param-V1.0-java",
-	owner: "oneplus",
-	jars: ["proprietary/framework/vendor.oneplus.hardware.param-V1.0-java.jar"],
-}
-
 cc_prebuilt_library_shared {
-	name: "libantradio",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libantradio.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libantradio.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbtnv",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libbtnv.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbtnv.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdsi_netctrl",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libdsi_netctrl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdsi_netctrl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmi_cci",
-	owner: "oneplus",
+	name: "libaudio_log_utils",
+	owner: "nokia",
 	strip: {
 		none: true,
 	},
@@ -349,8 +267,17 @@ dex_import {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	owner: "nokia",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "vendor.qti.gnss@4.0-service",
-	owner: "oneplus",
+	owner: "nokia",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
