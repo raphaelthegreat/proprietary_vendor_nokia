@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/NB1/proprietary/vendor/bin/csysservice:$(TARGET_COPY_OUT_VENDOR)/bin/csysservice \
     vendor/nokia/NB1/proprietary/vendor/bin/gx_fpcmd:$(TARGET_COPY_OUT_VENDOR)/bin/gx_fpcmd \
     vendor/nokia/NB1/proprietary/vendor/bin/gx_fpd:$(TARGET_COPY_OUT_VENDOR)/bin/gx_fpd \
+    vendor/nokia/NB1/proprietary/vendor/bin/nqnfcinfo:$(TARGET_COPY_OUT_VENDOR)/bin/nqnfcinfo \
     vendor/nokia/NB1/proprietary/vendor/bin/qca6234-service.sh:$(TARGET_COPY_OUT_VENDOR)/bin/qca6234-service.sh \
     vendor/nokia/NB1/proprietary/vendor/bin/qdcm_calib_data_JDI_Dual_nt36850_cmd_mode_dsi_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/bin/qdcm_calib_data_JDI_Dual_nt36850_cmd_mode_dsi_panel_without_DSC.xml \
     vendor/nokia/NB1/proprietary/vendor/bin/qdcm_calib_data_LGD_Dual_DSI_cmd_mode_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/bin/qdcm_calib_data_LGD_Dual_DSI_cmd_mode_panel_without_DSC.xml \
@@ -459,8 +460,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/NB1/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
     vendor/nokia/NB1/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
     vendor/nokia/NB1/proprietary/vendor/lib/libwapi_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwapi_cert.so \
-    vendor/nokia/NB1/proprietary/vendor/lib/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensor_calibrate.so \
-    vendor/nokia/NB1/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/nokia/NB1/proprietary/vendor/lib64/hw/fingerprint.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8998.so \
     vendor/nokia/NB1/proprietary/vendor/lib64/hw/gxfingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gxfingerprint.default.so \
     vendor/nokia/NB1/proprietary/vendor/lib64/libcert_parse.wpa_s.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcert_parse.wpa_s.so \
@@ -479,6 +478,4 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/NB1/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_bg_pca_algo.so \
     vendor/nokia/NB1/proprietary/vendor/lib64/libqfp-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp-service.so \
     vendor/nokia/NB1/proprietary/vendor/lib64/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoutils.so \
-    vendor/nokia/NB1/proprietary/vendor/lib64/libwapi_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwapi_cert.so \
-    vendor/nokia/NB1/proprietary/vendor/lib64/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensor_calibrate.so \
-    vendor/nokia/NB1/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so
+    vendor/nokia/NB1/proprietary/vendor/lib64/libwapi_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwapi_cert.so

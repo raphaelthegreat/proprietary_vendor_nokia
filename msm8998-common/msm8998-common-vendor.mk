@@ -108,12 +108,8 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
     vendor/nokia/msm8998-common/proprietary/system_ext/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/nokia/msm8998-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/nokia/msm8998-common/proprietary/system_ext/lib64/vendor.qti.ims.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.imsrtpservice@2.0.so \
-    vendor/nokia/msm8998-common/proprietary/system_ext/lib64/vendor.qti.ims.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.imsrtpservice@2.1.so \
-    vendor/nokia/msm8998-common/proprietary/system_ext/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.location.sdk.xml \
-    vendor/nokia/msm8998-common/proprietary/system_ext/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/izat.xt.srv.xml \
-    vendor/nokia/msm8998-common/proprietary/system_ext/framework/com.qti.location.sdk.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.location.sdk.jar \
-    vendor/nokia/msm8998-common/proprietary/system_ext/framework/izat.xt.srv.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/izat.xt.srv.jar \
+    vendor/nokia/msm8998-common/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@2.0.so \
+    vendor/nokia/msm8998-common/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@2.1.so \
     vendor/nokia/msm8998-common/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
     vendor/nokia/msm8998-common/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
@@ -126,11 +122,11 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/fstman:$(TARGET_COPY_OUT_VENDOR)/bin/fstman \
-    vendor/nokia/msm8998-common/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
+    vendor/nokia/msm8998-common/proprietary/vendor/bin/hw/android.hardware.gnss@2.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.0-service-qti \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
@@ -145,6 +141,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
+    vendor/nokia/msm8998-common/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/nokia/msm8998-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
@@ -199,6 +196,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
+    vendor/nokia/msm8998-common/proprietary/vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.0-service-qti.rc \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
@@ -228,7 +226,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/thermal-engine-cobalt.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-cobalt.conf \
     vendor/nokia/msm8998-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/nokia/msm8998-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/nokia/msm8998-common/proprietary/vendor/firmware/a225_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pfp.fw \
     vendor/nokia/msm8998-common/proprietary/vendor/firmware/a225_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pm4.fw \
     vendor/nokia/msm8998-common/proprietary/vendor/firmware/a225p5_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225p5_pm4.fw \
@@ -279,10 +276,12 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/hw/activity_recognition.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.msm8998.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/hw/gatekeeper.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.msm8998.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/hw/keystore.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.msm8998.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/hw/sound_trigger.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msm8998.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
@@ -326,6 +325,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
@@ -336,6 +336,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneqmiutils.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpmqmihal.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
@@ -354,13 +355,27 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgdtap.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgeofencing.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnss.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterdeviceutils.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterprovision.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterutils.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblbs_core.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_core.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
@@ -387,6 +402,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilFramework.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildatactl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdma_file_agent.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
@@ -421,7 +437,9 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsettings.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
@@ -441,6 +459,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrild_librilutils.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtibus.so \
@@ -463,6 +482,8 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/rfsa/adsp/libvpp_frc.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_frc.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_svc_skel.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensor_calibrate.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
@@ -471,6 +492,11 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.0.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.1.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.2.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@2.0.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@2.1.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cacert@1.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.am@1.0.so \
@@ -508,12 +534,13 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/activity_recognition.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.msm8998.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/gatekeeper.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.msm8998.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/keystore.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8998.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.msm8998.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
@@ -567,11 +594,10 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
@@ -592,13 +618,15 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastrpc_utf_stub.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-ipc.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-osal.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofencing.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
@@ -610,11 +638,11 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libmdmimgload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmimgload.so \
@@ -623,7 +651,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
@@ -639,12 +666,12 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
@@ -681,6 +708,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
@@ -701,6 +729,8 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensor_calibrate.so \
+    vendor/nokia/msm8998-common/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
@@ -715,9 +745,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.2.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.1.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@3.0.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.gnss@4.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0-service.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.gnss@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
@@ -732,7 +759,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
     vendor/nokia/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
@@ -794,5 +820,6 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
+    android.hardware.gnss@2.0-service-qti \
     manifest_android.hardware.drm@1.3-service.widevine \
-    vendor.qti.gnss@4.0-service
+    vendor.qti.gnss@3.0-service
