@@ -199,17 +199,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "IWlanService",
-	owner: "nokia",
-	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "TimeService",
 	owner: "nokia",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
