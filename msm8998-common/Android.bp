@@ -6,6 +6,26 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libaudio_log_utils",
+	owner: "nokia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libaudio_log_utils.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libaudio_log_utils.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libgpustats",
 	owner: "nokia",
 	strip: {
@@ -145,7 +165,7 @@ cc_prebuilt_library_shared {
 android_app_import {
 	name: "WfdService",
 	owner: "nokia",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	apk: "proprietary/system/priv-app/WfdService/WfdService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -258,7 +278,7 @@ android_app_import {
 dex_import {
 	name: "WfdCommon",
 	owner: "nokia",
-	jars: ["proprietary/framework/WfdCommon.jar"],
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
 prebuilt_etc_xml {
