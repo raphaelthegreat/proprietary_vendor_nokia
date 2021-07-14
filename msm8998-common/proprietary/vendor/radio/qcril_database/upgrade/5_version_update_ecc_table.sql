@@ -6,7 +6,7 @@
 
 BEGIN TRANSACTION;
 
-INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 5);
+INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 6);
 
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '840' AND NUMBER = '101';
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '840' AND NUMBER = '102';
@@ -140,5 +140,32 @@ DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '874' AND NUMBER = '101';
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '874' AND NUMBER = '102';
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '874' AND NUMBER = '108';
+
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '605' AND NUMBER = '190';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '605' AND NUMBER = '193';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '605' AND NUMBER = '197';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '605' AND NUMBER = '198';
+INSERT INTO qcril_emergency_source_mcc_table VALUES('605','190','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('605','193','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('605','197','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('605','198','','');
+
+DELETE FROM qcril_emergency_source_voice_table where MCC = '605' AND NUMBER = '190';
+DELETE FROM qcril_emergency_source_voice_table where MCC = '605' AND NUMBER = '193';
+DELETE FROM qcril_emergency_source_voice_table where MCC = '605' AND NUMBER = '197';
+DELETE FROM qcril_emergency_source_voice_table where MCC = '605' AND NUMBER = '198';
+INSERT INTO qcril_emergency_source_voice_table VALUES('605','190','','full');
+INSERT INTO qcril_emergency_source_voice_table VALUES('605','193','','full');
+INSERT INTO qcril_emergency_source_voice_table VALUES('605','197','','full');
+INSERT INTO qcril_emergency_source_voice_table VALUES('605','198','','full');
+
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '605' AND NUMBER = '190';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '605' AND NUMBER = '193';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '605' AND NUMBER = '197';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '605' AND NUMBER = '198';
+INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('605','190','','');
+INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('605','193','','');
+INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('605','197','','');
+INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('605','198','','');
 
 COMMIT TRANSACTION;

@@ -6,23 +6,22 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libaudio_log_utils",
+	name: "libantradio",
 	owner: "nokia",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaudio_log_utils.so"],
+			srcs: ["proprietary/lib/libantradio.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libaudio_log_utils.so"],
+			srcs: ["proprietary/lib64/libantradio.so"],
 		},
 	},
 	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -37,66 +36,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgpustats.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmi_cci",
-	owner: "nokia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmi_common_so",
-	owner: "nokia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmi_common_so.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdm-disp-vndapis",
-	owner: "nokia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsdm-disp-vndapis.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -125,47 +64,20 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.fm@1.0",
+android_app_import {
+	name: "aptxals",
 	owner: "nokia",
-	strip: {
-		none: true,
+	apk: "proprietary/app/aptxals/aptxals.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
 	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/vendor.qti.hardware.fm@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libantradio",
-	owner: "nokia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libantradio.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libantradio.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "WfdService",
 	owner: "nokia",
-	apk: "proprietary/system/priv-app/WfdService/WfdService.apk",
+	apk: "proprietary/priv-app/WfdService/WfdService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -220,91 +132,183 @@ android_app_import {
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "nokia",
-	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	system_ext_specific: true,
+	product_specific: true,
 }
 
 android_app_import {
 	name: "datastatusnotification",
 	owner: "nokia",
-	apk: "proprietary/system_ext/app/datastatusnotification/datastatusnotification.apk",
+	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	system_ext_specific: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "imssettings",
+	owner: "nokia",
+	apk: "proprietary/product/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
 }
 
 android_app_import {
 	name: "uceShimService",
 	owner: "nokia",
-	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
+	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	system_ext_specific: true,
+	product_specific: true,
 }
 
 android_app_import {
 	name: "dpmserviceapp",
 	owner: "nokia",
-	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	system_ext_specific: true,
+	product_specific: true,
 }
 
 android_app_import {
 	name: "ims",
 	owner: "nokia",
-	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	system_ext_specific: true,
+	product_specific: true,
 }
 
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "nokia",
-	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	system_ext_specific: true,
+	product_specific: true,
 }
 
 dex_import {
 	name: "WfdCommon",
 	owner: "nokia",
-	jars: ["proprietary/system/framework/WfdCommon.jar"],
+	jars: ["proprietary/framework/WfdCommon.jar"],
+}
+
+dex_import {
+	name: "audiosphere",
+	owner: "nokia",
+	jars: ["proprietary/framework/audiosphere.jar"],
+}
+
+dex_import {
+	name: "QtiTelephonyServicelibrary",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/QtiTelephonyServicelibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/com.qti.dpmframework.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.0-java",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.1-java",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.2-java",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.0-java",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.1-java",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/dpmapi.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/qcrilhook.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callinfo-V1.0-java",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.0-java",
+	owner: "nokia",
+	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	product_specific: true,
 }
 
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.0-service-qti",
 	owner: "nokia",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
-	owner: "nokia",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
