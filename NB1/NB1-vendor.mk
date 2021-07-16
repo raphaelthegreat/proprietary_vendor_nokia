@@ -33,22 +33,14 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/NB1/proprietary/vendor/bin/qdcm_calib_data_LGD_Dual_DSI_cmd_mode_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/bin/qdcm_calib_data_LGD_Dual_DSI_cmd_mode_panel_without_DSC.xml \
     vendor/nokia/NB1/proprietary/vendor/bin/qfp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qfp-daemon \
     vendor/nokia/NB1/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Bluetooth_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/General_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Global_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Handset_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Hdmi_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Headset_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/Speaker_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1/workspaceFile.qwsp \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Bluetooth_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/General_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Global_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Handset_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Hdmi_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Headset_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/Speaker_cal.acdb \
-    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/NB1EVT/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/NB1EVT/workspaceFile.qwsp \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
+    vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
     vendor/nokia/NB1/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/nokia/NB1/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
     vendor/nokia/NB1/proprietary/vendor/etc/camera/csidtg_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/csidtg_camera.xml \
@@ -100,7 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/NB1/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/nokia/NB1/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/nokia/NB1/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
-    vendor/nokia/NB1/proprietary/vendor/lib/hw/activity_recognition.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.msm8998.so \
     vendor/nokia/NB1/proprietary/vendor/lib/hw/audio.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msm8998.so \
     vendor/nokia/NB1/proprietary/vendor/lib/hw/camera.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8998.so \
     vendor/nokia/NB1/proprietary/vendor/lib/libactuator_ak7371.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7371.so \
@@ -273,6 +264,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/NB1/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
     vendor/nokia/NB1/proprietary/vendor/lib/libmmcamera_imglib_faceproc_adspstub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib_faceproc_adspstub.so \
     vendor/nokia/NB1/proprietary/vendor/lib/libmmcamera_imx258_color_fih.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx258_color_fih.so \
+    vendor/nokia/NB1/proprietary/vendor/lib/libmmcamera_imx258_front_fih.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx258_front_fih.so \
     vendor/nokia/NB1/proprietary/vendor/lib/libmmcamera_imx258_mono_fih.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx258_mono_fih.so \
     vendor/nokia/NB1/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
     vendor/nokia/NB1/proprietary/vendor/lib/libmmcamera_isp_abf48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abf48.so \
@@ -356,7 +348,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/NB1/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
     vendor/nokia/NB1/proprietary/vendor/lib/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensor_calibrate.so \
     vendor/nokia/NB1/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
-    vendor/nokia/NB1/proprietary/vendor/lib64/hw/activity_recognition.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.msm8998.so \
     vendor/nokia/NB1/proprietary/vendor/lib64/hw/audio.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.msm8998.so \
     vendor/nokia/NB1/proprietary/vendor/lib64/hw/fingerprint.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8998.so \
     vendor/nokia/NB1/proprietary/vendor/lib64/hw/gxfingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gxfingerprint.default.so \
